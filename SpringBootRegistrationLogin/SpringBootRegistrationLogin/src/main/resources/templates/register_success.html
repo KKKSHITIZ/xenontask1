@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Registration Success</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div >
+<nav class="navbar navbar-default" style="background-color: black">
+  <div class="container-fluid ">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font: bold;color: white;">XenonStack Talents</a>
+      </div>
+    <ul class="nav" style="font: bold;color: white;">
+      <li><a href="@{/}">Home</a></li>&emsp;
+      <li><a href="@{/register}">Sign Up</a></li> &emsp;
+      <li><a href="@{/login}">Login</a></li>&emsp;
+            <li><a th:href="@{/contactUs}">Contact Us</a></li>&emsp;
+            <li><a th:href="@{/users}">Interested Students</a></li>
+    </ul>
+    </nav>
+  </div>
+	<div class="container text-center">
+		<h3>You have signed up successfully!</h3>
+		<h4><a th:href="@{/login}">Click here to Login</a></h4>
+	</div>
+	
+</body>
+</html>

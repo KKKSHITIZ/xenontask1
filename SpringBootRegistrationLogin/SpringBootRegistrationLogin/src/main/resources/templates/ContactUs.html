@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="ISO-8859-1">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="display: flex;
+  align-items: center;">
+<div >
+<nav class="navbar navbar-default" style="background-color: black">
+  <div class="container-fluid ">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font: bold;color: white;">XenonStack Talents</a>
+      </div>
+    <ul class="nav" style="font: bold;color: white;">
+      <li><a href="@{/}">Home</a></li>&emsp;
+      <li><a href="@{/register}">Sign Up</a></li> &emsp;
+      <li><a href="@{/login}">Login</a></li>&emsp;
+          <li><a th:href="@{/contactUs}">Contact Us</a></li>&emsp;
+          <li><a th:href="@{/users}">Interested Students</a></li>
+    </ul>
+    </nav>
+  </div >
+  <pre>
+      <b>  
+              
+<div class="container">
+  <form action="action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+   Contact US:
+Address: G 36, G Block, Connaught Place, New Delhi – 110001, India
+  Email: support@easyleadz.com
+  Phone Number:+91xxxxxxxxxx
+  </b>
+  </pre>
+</div>
+</body>
+</html>
